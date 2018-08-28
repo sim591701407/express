@@ -37,5 +37,5 @@
         .then(() => engine.clear())
         .then(() => document.getElementById('go').addEventListener('click', start));
     }
-	.start()
+	.start();
 })();
