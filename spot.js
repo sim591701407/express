@@ -6,7 +6,7 @@
     var engine = new Shape.Engine(canvas);
     var promise = new Promise((resolve) => { resolve(); });
     
-    document.getElementById('go').addEventListener('click', start);
+    document.getElementById('go');
     
     function start() {
         document.getElementById('go').removeEventListener('click', start);
