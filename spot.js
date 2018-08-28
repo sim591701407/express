@@ -6,10 +6,10 @@
     var engine = new Shape.Engine(canvas);
     var promise = new Promise((resolve) => { resolve(); });
     
-    document.getElementById('go').addEventListener('click',start);
+    document.getElementById('go');
     
     function start() {
-        document.getElementById('go').removeEventListener('click', start);
+        document.getElementById('go');
         promise.then(() => engine.toText('I'))
         .then(() => engine.shake())
 		.then(() => engine.toText('L'))
@@ -35,7 +35,7 @@
 		.then(() => engine.toText('T-T！'))
         .then(() => engine.shake())
         .then(() => engine.clear())
-        .then(() => document.getElementById('go').addEventListener('click', start));
+        .then(() => document.getElementById('go'));
     }
 	 start();
 })();
